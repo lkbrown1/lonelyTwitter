@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -44,6 +45,10 @@ public class LonelyTwitterActivity extends Activity {
 				saveInFile(tweet);
 				tweets.add(tweet);
 				adapter.notifyDataSetChanged();
+				
+//				Intent intent = new Intent(LonelyTwitterActivity.this, IntentReaderActivity.class);
+//				intent.putExtra(IntentReaderActivity.TEXT_TO_TRANSFORM_KEY, "abc");
+//				startActivity(intent);
 			}
 		});
 	}
